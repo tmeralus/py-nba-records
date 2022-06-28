@@ -1,3 +1,4 @@
 pandas
 colored<1.4.3
 colorama
+art
