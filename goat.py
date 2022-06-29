@@ -3,8 +3,6 @@ import json
 import pandas as pd
 import argparse # adding command line switches 
 from art import *
-import requests
-from requests.structures import CaseInsensitiveDict
 
 __author__ = "Tedley Meralus"
 __copyright__ = "Copyright 2022, Tedley Meralus"
@@ -14,7 +12,6 @@ __version__ = "1.0.1"
 __maintainer__ = "Tedley Meralus"
 __email__ = "tmeralus@gmail.com"
 __status__ = "Development"
-
 
 # Parse Arguments
 def parser_error(errmsg): 
@@ -65,51 +62,34 @@ def credits_banner():
     print(cbanner) 
 
 # Banner Ascii Art and notes
-BannerArt=text2art("NBA Records", "random")
-#BannerArt_teams=text2art("NBA Records", "bolger")
+Banner_goat=text2art("G.O.A.T. DEBATE", "random")
+Banner_head_to_head=text2art("Head To Head Comparison", "random")
 BannerBorder=("----------------------------------------------------------------------------------------------------------")
 BarcodeBorder=text2art("---------------------------------------------------------------------------------",font="fancy12",decoration="barcode1")
 BarcodeEmptyBorder=text2art("                                                                                        ",font="fancy12",decoration="barcode1")
 BannerBorder=("----------------------------------------------------------------------------------------------------------")
-BannerText1=("                   Compare how NBA Teams Matchup against each other")
+BannerText1=("Head To Head Comparison")
 BannerText2=("                      View head-to-head records, historical data, and more")
 BannerAuthor=(" Created by @techgameteddy")
 BannerIssues=(" Issues: https://github.com/tmeralus/py-nba-records ") 
 BannerCredits=(" Credits: localhost/creddits ") 
 
 def title_banner():  
-    print(BannerArt)  
+    print(Banner_goat)   
     print(BannerBorder)  
-    print(BannerText1) 
-    print(BannerText2) 
-    print(BannerBorder)  
-    print(BannerAuthor)   
-    print(BannerIssues) 
-    print(BannerCredits) 
+    print(BannerText1)   
     print(BannerBorder) 
  
 # function for list of team names 
-def team_history_table(): 
+def head_to_head_table(): 
     # read teams data
     nba_teams = pd.read_json('data/team-history.json')
     nba_table = pd.DataFrame(nba_teams)
     print(nba_table) 
 
-
-def team_name():
-        url = "https://www.landofbasketball.com/head_to_head_gl/heat_vs_timberwolves_game_log_season.htm"
-        testdata = pd.read_html(url)
-        table1 = testdata[1]
-        #table2 = testdata[['Score','Streak']]
-
-        print(table1)
-
-
 def interactive(): 
-    parse_args()  
     title_banner()
-    team_name()
-    #team_history_table()
+    head_to_head_table() 
     
 if __name__ == "__main__":
     interactive()
