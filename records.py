@@ -4,6 +4,7 @@ import pandas as pd
 import argparse # adding command line switches 
 from art import *
 import requests
+import numpy as np
 from requests.structures import CaseInsensitiveDict
 
 __author__ = "Tedley Meralus"
@@ -31,41 +32,9 @@ def parse_args():
     parser.add_argument("-e", "-est", "--established", help=" print records of teams establised year and names") 
     parser.add_argument("-t", "-teams", "--teams", help=" print record of teams in order of championships")  
     return parser.parse_args()
- 
-
-# Credits Banner 
-def credits_banner():
-    cbanner = """
-|----------------------------------------------------------------------------------------------------|
-|                                                      ___________________   ___________________      |
-|                     _ _ _                        .-/|                   \ /                  |\-.   |
-|                    | (_) |                       ||||    ~~*~~           |       ~~*~~       ||||   |
-|    ___ _ __ ___  __| |_| |_ ___                  |||| Dr. James Naismith |    Inventor of    ||||   |
-|   / __| '__/ _ \/ _` | | __/ __|                 ||||                    |    Basketball     ||||   |
-|   | (__| | |  __/ (_| | | |_\__ \                ||||    ~~*~~           |       ~~*~~       ||||   |
-|    \___|_|  \___|\__,_|_|\__|___/                |||| Born: 11-06-1861   |   ____________    ||||   |
-|                                                  |||| Died: 11-28-1939   |  |_____ ______|   ||||   |
-|                                                  ||||                    |   \/\/\/\\//\/    ||||   |
-|                                                  ||||    ~~*~~           |    \/\/\/\/\/     ||||   |
-|                                                  ||||   Physician,       |     |/\/\/\|      ||||   |
-|                                                  ||||    Educator        |      |/\/\|       ||||   |
-|                                                  ||||    Chaplain,       |                   ||||   |
-|                                                  ||||   Sports coach,    |                   ||||   |
-|                                                  ||||___________________ | __________________||||   |
-|                                                  ||/====================\|/===================\||   |
-|                                                  `---------------------~___~-------------------''   |
-|-----------------------------------------------------------------------------------------------------|
-|                                                                         |                           |
-|   Credits and Contributions to the nba-historian Python App             |                           |
-|   Created by Tedley Meralus <tmeralus@gmail.com>                        |                           |
-|    Twitter: @techgameteddy                                              |                           |
-|                                                                         |                           |
-|-----------------------------------------------------------------------------------------------------|
-        """
-    print(cbanner) 
 
 # Banner Ascii Art and notes
-BannerArt=text2art("NBA Records", "random")
+BannerArt=text2art("NBA Records",font="rnd-small")
 #BannerArt_teams=text2art("NBA Records", "bolger")
 BannerBorder=("----------------------------------------------------------------------------------------------------------")
 BarcodeBorder=text2art("---------------------------------------------------------------------------------",font="fancy12",decoration="barcode1")
@@ -73,9 +42,10 @@ BarcodeEmptyBorder=text2art("                                                   
 BannerBorder=("----------------------------------------------------------------------------------------------------------")
 BannerText1=("                   Compare how NBA Teams Matchup against each other")
 BannerText2=("                      View head-to-head records, historical data, and more")
-BannerAuthor=(" Created by @techgameteddy")
-BannerIssues=(" Issues: https://github.com/tmeralus/py-nba-records ") 
-BannerCredits=(" Credits: localhost/creddits ") 
+BannerAuthor=(" Follow @techgameteddy for updates")
+BannerIssues=(" Issues: https://github.com/tmeralus/py-nba-records/issues") 
+Bannerlink=(" Github: https://github.com/tmeralus/py-nba-records") 
+BannerCredits=(" Credits: localhost/credits ") 
 
 def title_banner():  
     print(BannerArt)  
@@ -83,11 +53,12 @@ def title_banner():
     print(BannerText1) 
     print(BannerText2) 
     print(BannerBorder)  
-    print(BannerAuthor)   
-    print(BannerIssues) 
-    print(BannerCredits) 
-    print(BannerBorder) 
  
+def footer():
+    print(BannerBorder)  
+    print(BannerAuthor, Bannerlink) 
+    print("")   
+
 # function for list of team names 
 def team_history_table(): 
     # read teams data
@@ -96,21 +67,30 @@ def team_history_table():
     print(nba_table) 
 
 
-def team_name():
+def team_test():
         url = "https://www.landofbasketball.com/head_to_head_gl/heat_vs_timberwolves_game_log_season.htm"
+        h2hurl = "https://www.landofbasketball.com/head_to_head/heat_rivals.htm"
+        h2hmia = "https://www.landofbasketball.com/head_to_head/heat_rivals.htm"
+        url2 = "https://www.landofbasketball.com/head_to_head.htm"
+        
         testdata = pd.read_html(url)
-        table1 = testdata[1]
-        #table2 = testdata[['Score','Streak']]
+        #testdata2 = pd.read_html(url).fillna('')
+        # Replace all Nan values to empty string
+        #testdatae = testdata.replace(np.nan, '', regex=True)
+        #df2 = df.replace(np.nan, '', regex=True)
+        #print(df2)
+ 
 
-        print(table1)
-
+        # print most recent 5 seasons
+        print("Head To Head in the Regular Season")
+        print(testdata[1:6])
 
 def interactive(): 
     parse_args()  
     title_banner()
-    team_name()
-    #team_history_table()
-    
+    team_test()  
+    footer()
+
 if __name__ == "__main__":
     interactive()
 
