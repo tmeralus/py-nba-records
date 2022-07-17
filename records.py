@@ -1,9 +1,10 @@
 #!/usr/bin/env python 
+from cgi import test
 import json
 import pandas as pd
 import argparse # adding command line switches 
-from art import *
-import requests
+from art import * 
+import html5lib
 import numpy as np
 from requests.structures import CaseInsensitiveDict
 
@@ -66,30 +67,37 @@ def team_history_table():
     nba_table = pd.DataFrame(nba_teams)
     print(nba_table) 
 
-
 def team_test():
         url = "https://www.landofbasketball.com/head_to_head_gl/heat_vs_timberwolves_game_log_season.htm"
-        h2hurl = "https://www.landofbasketball.com/head_to_head/heat_rivals.htm"
-        h2hmia = "https://www.landofbasketball.com/head_to_head/heat_rivals.htm"
-        url2 = "https://www.landofbasketball.com/head_to_head.htm"
+        url2 = "https://www.landofbasketball.com/head_to_head/lakers_vs_heat_all_time.htm" 
+        url3 = "https://www.landofbasketball.com/head_to_head.htm"
         
-        testdata = pd.read_html(url)
-        #testdata2 = pd.read_html(url).fillna('')
-        # Replace all Nan values to empty string
-        #testdatae = testdata.replace(np.nan, '', regex=True)
-        #df2 = df.replace(np.nan, '', regex=True)
-        #print(df2)
- 
-
-        # print most recent 5 seasons
+        #  keep_default_na=False removes the default behavior of replacing missing values with NaN
+        testdata = pd.read_html(url, keep_default_na=False)
+        print(len(testdata))
+        # prints a new text banner 
         print("Head To Head in the Regular Season")
-        print(testdata[1:6])
+        # variables for data ranging from 3-5 years
+        data0 = testdata[0]  
+        data1 = testdata[1]
+        data2 = testdata[2]
+        data3 = testdata[3]
+        data4 = testdata[4]
+        data5 = testdata[5]  
+        data6 = testdata[6]  
+        data2[0:6].astype('object')
+        print(data0.head())
+        print(data1.head())
+        print(data2.head())
+        print(data3.head())
+#        print(data4.head())
+#        print(data5.head())
 
 def interactive(): 
     parse_args()  
     title_banner()
     team_test()  
-    footer()
+    #footer()
 
 if __name__ == "__main__":
     interactive()

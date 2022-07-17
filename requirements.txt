@@ -5,3 +5,4 @@ art
 requests
 bs4
 numpy
+html5lib
