@@ -1,8 +1,8 @@
-pandas
-colored<1.4.3
-colorama
 art
-requests
 bs4
-numpy
+colorama
+colored<1.4.3
 html5lib
+numpy
+pandas
+requests

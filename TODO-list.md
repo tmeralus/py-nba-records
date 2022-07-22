@@ -1,0 +1,8 @@
+- print data into readable boxes 
+- create random data logic for start_here.py 
+- create logic to search for teams using json data 
+- add team information 
+- print nba team information 
+- print nba teams information with colors 
+- add team ascii logo art to team information
+- add color to banner title ascii art (text2art color options)

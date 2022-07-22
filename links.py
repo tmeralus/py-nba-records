@@ -31,38 +31,6 @@ h2h_rivals_tor  = "https://www.landofbasketball.com/head_to_head/raptors_rivals.
 h2h_rivals_uta  = "https://www.landofbasketball.com/head_to_head/jazz_rivals.htm"
 h2h_rivals_was  = "https://www.landofbasketball.com/head_to_head/wizards_rivals.htm" 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 head_to_head/packers1_rivals.htm
 head_to_head/bullets1_rivals.htm
 head_to_head/stags_rivals.htm
