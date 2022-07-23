@@ -6,3 +6,4 @@ html5lib
 numpy
 pandas
 requests
+terminaltables~=1.2.1

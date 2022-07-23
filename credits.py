@@ -29,3 +29,8 @@ def credits_banner():
 |-----------------------------------------------------------------------------------------------------|
         """
     print(cbanner) 
+    print(Nba Player and Team data json files) 
+    print(https://github.com/bttmly/nba)
+    print(Land of Basketball)
+    print(https://www.landofbasketball.com/head_to_head_gl/heat_vs_lakers_game_log_season.htm)
+

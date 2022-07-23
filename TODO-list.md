@@ -1,6 +1,8 @@
 - print data into readable boxes 
 - create random data logic for start_here.py 
 - create logic to search for teams using json data 
+- create team head to head list logic 
+- create auto complete with typing 
 - add team information 
 - print nba team information 
 - print nba teams information with colors 

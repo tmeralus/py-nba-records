@@ -4,209 +4,239 @@
     "abbreviation": "ATL",
     "Team Name": "Atlanta Hawks",
     "Short Name": "Hawks",
-    "location": "Atlanta"
+    "location": "Atlanta",
+    "h2h name": "hawks"
   },
   {
     "established": 1610612738,
     "abbreviation": "BOS",
     "Team Name": "Boston Celtics",
     "Short Name": "Celtics",
-    "location": "Boston"
+    "location": "Boston",
+    "h2h name": "celtics"
   },
   {
     "established": 1610612751,
     "abbreviation": "BKN",
     "Team Name": "Brooklyn Nets",
     "Short Name": "Nets",
-    "location": "Brooklyn"
+    "location": "Brooklyn",
+    "h2h name": "nets"
   },
   {
     "established": 1610612766,
     "abbreviation": "CHA",
     "Team Name": "Charlotte Hornets",
     "Short Name": "Hornets",
-    "location": "Charlotte"
+    "location": "Charlotte",
+    "h2h name": "hornets"
   },
   {
     "established": 1610612741,
     "abbreviation": "CHI",
     "Team Name": "Chicago Bulls",
     "Short Name": "Bulls",
-    "location": "Chicago"
+    "location": "Chicago",
+    "h2h name": "bulls"
   },
   {
     "established": 1610612739,
     "abbreviation": "CLE",
     "Team Name": "Cleveland Cavaliers",
     "Short Name": "Cavaliers",
-    "location": "Cleveland"
+    "location": "Cleveland",
+    "h2h name": "cavaliers"
   },
   {
     "established": 1610612742,
     "abbreviation": "DAL",
     "Team Name": "Dallas Mavericks",
     "Short Name": "Mavericks",
-    "location": "Dallas"
+    "location": "Dallas",
+    "h2h name": "mavericks"
   },
   {
     "established": 1610612743,
     "abbreviation": "DEN",
     "Team Name": "Denver Nuggets",
     "Short Name": "Nuggets",
-    "location": "Denver"
+    "location": "Denver",
+    "h2h name": "nuggets"
   },
   {
     "established": 1610612765,
     "abbreviation": "DET",
     "Team Name": "Detroit Pistons",
     "Short Name": "Pistons",
-    "location": "Detroit"
+    "location": "Detroit",
+    "h2h name": "pistons"
   },
   {
     "established": 1610612744,
     "abbreviation": "GSW",
     "Team Name": "Golden State Warriors",
     "Short Name": "Warriors",
-    "location": "Golden State"
+    "location": "Golden State",
+    "h2h name": "warriors"
   },
   {
     "established": 1610612745,
     "abbreviation": "HOU",
     "Team Name": "Houston Rockets",
     "Short Name": "Rockets",
-    "location": "Houston"
+    "location": "Houston",
+    "h2h name": "rockets"
   },
   {
     "established": 1610612754,
     "abbreviation": "IND",
     "Team Name": "Indiana Pacers",
     "Short Name": "Pacers",
-    "location": "Indiana"
+    "location": "Indiana",
+    "h2h name": "pacers"
   },
   {
     "established": 1610612746,
     "abbreviation": "LAC",
     "Team Name": "Los Angeles Clippers",
     "Short Name": "Clippers",
-    "location": "Los Angeles"
+    "location": "Los Angeles",
+    "h2h name": "clippers"
   },
   {
     "established": 1610612747,
     "abbreviation": "LAL",
     "Team Name": "Los Angeles Lakers",
     "Short Name": "Lakers",
-    "location": "Los Angeles"
+    "location": "Los Angeles",
+    "h2h name": "lakers"
   },
   {
     "established": 1610612763,
     "abbreviation": "MEM",
     "Team Name": "Memphis Grizzlies",
     "Short Name": "Grizzlies",
-    "location": "Memphis"
+    "location": "Memphis",
+    "h2h name": "grizzlies"
   },
   {
     "established": 1610612748,
     "abbreviation": "MIA",
     "Team Name": "Miami Heat",
     "Short Name": "Heat",
-    "location": "Miami"
+    "location": "Miami",
+    "h2h name": "heat"
   },
   {
     "established": 1610612749,
     "abbreviation": "MIL",
     "Team Name": "Milwaukee Bucks",
     "Short Name": "Bucks",
-    "location": "Milwaukee"
+    "location": "Milwaukee",
+    "h2h name": "bucks"
   },
   {
     "established": 1610612750,
     "abbreviation": "MIN",
     "Team Name": "Minnesota Timberwolves",
     "Short Name": "Timberwolves",
-    "location": "Minnesota"
+    "location": "Minnesota",
+    "h2h name": "timberwolves"
   },
   {
     "established": 1610612740,
     "abbreviation": "NOP",
     "Team Name": "New Orleans Pelicans",
     "Short Name": "Pelicans",
-    "location": "New Orleans"
+    "location": "New Orleans",
+    "h2h name": "pelicans"
   },
   {
     "established": 1610612752,
     "abbreviation": "NYK",
     "Team Name": "New York Knicks",
     "Short Name": "Knicks",
-    "location": "New York"
+    "location": "New York",
+    "h2h name": "knicks"
   },
   {
     "established": 1610612760,
     "abbreviation": "OKC",
     "Team Name": "Oklahoma City Thunder",
     "Short Name": "Thunder",
-    "location": "Oklahoma location"
+    "location": "Oklahoma location",
+    "h2h name": "thunder"
   },
   {
     "established": 1610612753,
     "abbreviation": "ORL",
     "Team Name": "Orlando Magic",
     "Short Name": "Magic",
-    "location": "Orlando"
+    "location": "Orlando",
+    "h2h name": "magic"
   },
   {
     "established": 1610612755,
     "abbreviation": "PHI",
     "Team Name": "Philadelphia 76ers",
     "Short Name": "76ers",
-    "location": "Philadelphia"
+    "location": "Philadelphia",
+    "h2h name": "76ers"
   },
   {
     "established": 1610612756,
     "abbreviation": "PHX",
     "Team Name": "Phoenix Suns",
     "Short Name": "Suns",
-    "location": "Phoenix"
+    "location": "Phoenix",
+    "h2h name": "suns"
   },
   {
     "established": 1610612757,
     "abbreviation": "POR",
     "Team Name": "Portland Trail Blazers",
     "Short Name": "Trail Blazers",
-    "location": "Portland"
+    "location": "Portland",
+    "h2h name": "trail_blazers"
   },
   {
     "established": 1610612758,
     "abbreviation": "SAC",
     "Team Name": "Sacramento Kings",
     "Short Name": "Kings",
-    "location": "Sacramento"
+    "location": "Sacramento",
+    "h2h name": "kings"
   },
   {
     "established": 1610612759,
     "abbreviation": "SAS",
     "Team Name": "San Antonio Spurs",
     "Short Name": "Spurs",
-    "location": "San Antonio"
+    "location": "San Antonio",
+    "h2h name": "spurs"
   },
   {
     "established": 1610612761,
     "abbreviation": "TOR",
     "Team Name": "Toronto Raptors",
     "Short Name": "Raptors",
-    "location": "Toronto"
+    "location": "Toronto",
+    "h2h name": "raptors"
   },
   {
     "established": 1610612762,
     "abbreviation": "UTA",
     "Team Name": "Utah Jazz",
     "Short Name": "Jazz",
-    "location": "Utah"
+    "location": "Utah",
+    "h2h name": "jazz"
   },
   {
     "established": 1610612764,
     "abbreviation": "WAS",
     "Team Name": "Washington Wizards",
     "Short Name": "Wizards",
-    "location": "Washington"
+    "location": "Washington",
+    "h2h name": "wizards"
   }
 ]

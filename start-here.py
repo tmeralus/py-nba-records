@@ -1,8 +1,8 @@
 #!/usr/bin/env python 
+from art import *  
 import random
 import argparse # adding command line switches 
-from art import * 
-from records import * # random record data 
+from parse import * # scraped nba record data
 
 # credits 
 __author__ = "Tedley Meralus"
@@ -67,7 +67,11 @@ def footer():
 def interactive(): 
     parse_args()  
     title_banner() 
-    random_stats() 
+    print(BannerBlank)  
+    #random_stats() 
+    #head_to_head()
+    url_scraper() 
+    print(BannerBlank)   
     footer() 
 
 if __name__ == "__main__":

@@ -1,5 +1,22 @@
+#!/usr/bin/env python 
+import json
+import pandas as pd
+import argparse # adding command line switches 
+from art import * 
+import html5lib
+import numpy as np
+
+# function for list of team names 
+def team_history_table(): 
+    # read teams data
+    nba_teams = pd.read_json('data/team-history.json')
+    nba_table = pd.DataFrame(nba_teams)
+    print(nba_table) 
 # variable links to tabulate data through 
-h2h_rivals_base = "https://www.landofbasketball.com/head_to_head/heat_rivals.htm" 
+h2h_rivals_base_url = "https://www.landofbasketball.com/head_to_head/heat_rivals.htm" 
+game_log_season = "https://www.landofbasketball.com/head_to_head_gl/heat_vs_timberwolves_game_log_season.htm"
+
+
 h2h_rivals_atl  = "https://www.landofbasketball.com/head_to_head/hawks_rivals.htm"
 h2h_rivals_bos  = "https://www.landofbasketball.com/head_to_head/celtics_rivals.htm"
 h2h_rivals_bkn  = "https://www.landofbasketball.com/head_to_head/nets_rivals.htm"
